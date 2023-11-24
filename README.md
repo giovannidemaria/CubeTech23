@@ -12,3 +12,7 @@
 <code>sudo systemctl start vncserver-x11-serviced</code>
 
 An then you wait a little bit. Then you connect using RealVNC client (username and pw are raspi).
+
+## I am trying to install the Intel SDK for the camera...
+
+this website: <a href="https://github.com/IntelRealSense/librealsense">https://github.com/IntelRealSense/librealsense</a>
