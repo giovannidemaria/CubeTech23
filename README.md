@@ -9,6 +9,6 @@
 
 ## in order to start VNC server you need this command:
 
-<codesudo systemctl start vncserver-x11-serviced</code>
+<code>sudo systemctl start vncserver-x11-serviced</code>
 
 An then you wait a little bit. Then you connect using RealVNC client (username and pw are raspi).
