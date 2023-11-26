@@ -9,14 +9,9 @@ def check_value(x_val, y_val):
 
 
 def take_pictures(i):
-    os.system("ffmpeg -i /dev/video2 -frames:v 1 -vf scale=iw*1.5:ih*1.5,crop=iw:ih output" + i + ".jpg")
+    os.system("ffmpeg -i /dev/video2 -frames:v 1 output" + str(i) + ".jpg")
     # img = cv2.imread(r'output'+i+'.jpg')
 
-
-x_min = int(input("inserire x_min"))
-x_max = int(input("inserire x_max"))
-y_min = int(input("inserire y_min"))
-y_max = int(input("inserire y_max"))
 
 # sensors setup
 i2c = board.I2C()
