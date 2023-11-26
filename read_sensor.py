@@ -2,10 +2,7 @@ import time
 import board
 # from adafruit_lsm6ds.lsm6dsox import LSM6DSOX
 import adafruit_lis3mdl as LIS3MDL
-from datetime import datetime
 import os
-import cv2
-
 
 def check_value(x_val, y_val):
     return (int(x_val * 100) in range(2200, 2600)) and (int(y_val * 100) in range(19400, 19600))
@@ -21,10 +18,6 @@ i2c = board.I2C()
 # sensor = LSM6DSOX(i2c)
 sensor_2 = LIS3MDL.LIS3MDL(i2c)
 
-# file setup
-data_file = open('data.txt', 'a')
-now_str = (datetime.now()).strftime("%d/%m/%Y %H:%M:%S")
-data_file.write('\n\n' + now_str + '\n')
 
 i = 0
 while True:
