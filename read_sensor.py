@@ -12,7 +12,7 @@ def check_value(x_val, y_val):
 
 
 def take_pictures(i):
-    os.system("ffmpeg -i /dev/video2 -frames:v 1 -vf "scale=iw*1.5:ih*1.5,crop=iw:ih output" + i + ".jpg")
+    os.system("ffmpeg -i /dev/video2 -frames:v 1 -vf scale=iw*1.5:ih*1.5,crop=iw:ih output" + i + ".jpg")
     # img = cv2.imread(r'output'+i+'.jpg')
 
 
