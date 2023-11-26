@@ -13,6 +13,11 @@ def take_pictures(i):
     # img = cv2.imread(r'output'+i+'.jpg')
 
 
+x_min = int(input("inserire x_min"))
+x_max = int(input("inserire x_max"))
+y_min = int(input("inserire y_min"))
+y_max = int(input("inserire y_max"))
+
 # sensors setup
 i2c = board.I2C()
 # sensor = LSM6DSOX(i2c)
