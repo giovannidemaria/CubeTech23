@@ -27,7 +27,6 @@ sensor_2 = LIS3MDL.LIS3MDL(i2c)
 i = 0
 while True:
     mag_x, mag_y, mag_z = sensor_2.magnetic
-    data_string = 'X:{0:10.2f}, Y:{1:10.2f}'.format(mag_x, mag_y, mag_z)
     if check_value(mag_x, mag_y):
         print("--correct value detected--")
         take_pictures(i)
