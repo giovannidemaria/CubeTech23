@@ -1,3 +1,4 @@
+#detecting an object
 import cv2
 
 img = cv2.imread('outputX.jpg')
